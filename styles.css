@@ -46,12 +46,15 @@ body {
 }
 .list-nobullets{
     list-style: none;
+    padding-inline-start: 0px;
+    
 }
 
 .list-inline{
     display: inline;
     text-align: right;
     padding: 1rem;
+    color: white;
     }
 
     .footer{ 
@@ -67,14 +70,16 @@ body {
         height:20%; 
     } */
 
-    .footer {
+    /* .footer {
         position:absolute;
         bottom:0;
         width:100%;
         height:100px;   /* Height of the footer */
-        background:#6cf;
-    }
+ 
     .footer .link{
+        color: white;
+    }
+    .chColor{
         color: white;
     }
 
