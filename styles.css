@@ -10,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     align-items: center;
-    background-color: #bcd3f7;
+    background-color: var(--off-white);
 }
 
 .alignc{
@@ -53,15 +53,26 @@ body {
     text-align: right;
     padding: 1rem;
     }
-    .footer{
+
+    .footer{ 
         background-color: var(--primary-color);
-        border-top: 1rem;
         color: white;
         padding-left: 1rem;
         padding-top: 0.1rem;
         padding-inline-start: 0px;
         padding-bottom: 1rem;
-    
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:20%; 
+    } */
+
+    .footer {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:100px;   /* Height of the footer */
+        background:#6cf;
     }
     .footer .link{
         color: white;
@@ -85,3 +96,15 @@ body {
          padding-right: 5mm;
 
      }
+     .labelp{
+        font-weight: bold;
+        font-size: larger;
+        padding-right: 5mm;
+
+    }
+    .labelb{
+        font-weight: bold;
+        font-size: larger;
+        padding-right: 15mm;padding-left: 15mm;
+
+    }

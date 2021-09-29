@@ -3,29 +3,31 @@ const calButten = document.querySelector("#cal-button");
 const clearButton = document.querySelector("#clear-button");
 const output = document.querySelector('#output');
 
+calButten.addEventListener("click", calculateValue);
+
 function calculateValue()
 {
     if((Number(sides[0].value)&& Number(sides[1].value)))
     {
         if( ((Number(sides[0].value)) >0 ) && ((Number(sides[1].value)) >0 ))
     {
-        const product = prodOfBH(Number(sides[0].value), Number(sides[1].value));
-        const areaOfT = product/2;
-        output.innerText = "Result is "+areaOfT +" sq. cm";
+        const prod = multiBaseHeight(Number(sides[0].value), Number(sides[1].value));
+        const calArea = prod/2;
+        output.innerText = "Result is "+calArea +" sq. cm";
     }
     else
-    output.innerText = "Entered value is Negative!";
+    output.innerText = "Sides cannot be negative";
     }
     else
-    output.innerText = "Input error: Enter value in both the fields";
+    output.innerText = "Invalid Input! Try Again";
 }
 
-function prodOfBH(b,h)
+function multiBaseHeight(b,h)
 {
-    const result = b*h;
-    return result;
+    const multi = b*h;
+    return multi;
 }
-calButten.addEventListener("click", calculateValue);
+
 
 clearButton.addEventListener('click', () => {
   sides.forEach(input =>  input.value = '', output.style.display = "none"

@@ -27,11 +27,11 @@ function calSumAngles(input1,input2,input3){
 }
 
 function getMessage(msg){
-    output.innerText = msg;
+    message.innerText = msg;
 
 }
 
 clearButton.addEventListener('click', () => {
-    angleInput.forEach(input =>  input.value = '', output.style.display = "none"
+    angleInput.forEach(input =>  input.value = '', message.style.display = "none"
     );
 });

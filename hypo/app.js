@@ -6,11 +6,13 @@ const output = document.querySelector("#output");
 calculate.addEventListener("click", calculateHypotenuse);
 
 function calculateSumOfSquare(s1, s2) {
+  var sumOfSquares =0;
   if(s1<0||s2<0){
     output.innerText = "Invalid Input";
   }
   else{
-  const sumOfSquares = s1 * s1 + s2 * s2;}
+  sumOfSquares = s1 * s1 + s2 * s2;
+}
   return sumOfSquares;
 }
 
