@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
+  
     --primary-color: #004380;
     --off-white: #F3F4F6;
-    --dark-red: #8b132f;
+    --dark-red: #F0D3F7;
+    --black: #080705;
 }
 
 body {
@@ -27,19 +29,19 @@ body {
 }
 
 .color1{
-    background-color: var(--dark-red);
+    background-color: var(--black);
+    color: var(--off-white);
+    border: none;
     color: white;
-    border-radius: 2mm;
-    padding: 2.2mm 5mm;
-    font-weight: bold;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    margin: auto;
+    
 }
-.color2{
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-    border-radius: 2mm;
-    padding: 1.5mm 5mm;
-    font-weight: bolder;
- 
+.social {
+    font-size: 3rem;
 }
 .link{
     text-decoration: none;
@@ -54,12 +56,12 @@ body {
     display: inline;
     text-align: right;
     padding: 1rem;
-    color: white;
+    color: var(--black);
     }
 
     .footer{ 
-        background-color: var(--primary-color);
-        color: white;
+        background-color: var(--dark-red);
+        color: var(--black);
         padding-left: 1rem;
         padding-top: 0.1rem;
         padding-inline-start: 0px;
